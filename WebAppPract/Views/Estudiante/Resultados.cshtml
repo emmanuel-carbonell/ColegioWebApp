@@ -1,0 +1,20 @@
+﻿@model WebAppPract.Models.Estudiante
+
+@{
+    ViewBag.Title = "Resultados";
+}
+
+<h2>Resultados</h2>
+
+<h3>Cedula: @Model.Cedula</h3>
+<h3>Nombre: @Model.Nombre</h3>
+<h3>Apellido: @Model.Apellido</h3>
+<h3>Edad: @Model.Edad</h3>
+<h3>Telefono: @Model.Telefono</h3>
+<h3>Email: @Model.Email</h3>
+<h3>Genero: @Model.Genero</h3>
+<h3>Estado Civil: @Model.EstadoCivil</h3>
+<h3>Hobby: @Model.Hobby</h3>
+<h3>Foto: @Model.Foto</h3>
+
+<img src="/@Url.Action("ProcesaFoto", new { foto=ViewBag.picture})" />

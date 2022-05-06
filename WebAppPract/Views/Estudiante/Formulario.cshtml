@@ -1,0 +1,78 @@
+﻿
+@{
+    ViewBag.Title = "Formulario";
+}
+
+<h2>Formulario</h2>
+
+
+<form method="post" action="Resultados" enctype="multipart/form-data">
+
+    <input type="text" name="cedula" class="form-control" placeholder="Cedula" required />
+    <input type="text" name="nombre" class="form-control" placeholder="Nombre" required />
+    <input type="text" name="apellido" class="form-control" placeholder="Apellido" required />
+    <input type="number" min="18" name="edad" class="form-control" placeholder="Edad" />
+    <input type="number" name="telefono" class="form-control" placeholder="Telefono" />
+    <input type="text" name="email" class="form-control" placeholder="Email" required />
+    <p>Genero</p>
+    <div>
+        <input type="radio" id="masculino" name="genero" value="masculino">
+        <label for="masculino">Masculino</label>
+    </div>
+
+    <div>
+        <input type="radio" id="femenino" name="genero" value="femenino">
+        <label for="femenino">Femenino</label>
+    </div>
+
+
+
+    <p>Estado Civil</p>
+    <div>
+        <input type="radio" id="casado" name="estadocivil" value="casado">
+        <label for="casado">Casado</label>
+    </div>
+
+    <div>
+        <input type="radio" id="soltero" name="estadocivil" value="soltero">
+        <label for="soltero">Soltero</label>
+    </div>
+    <div>
+        <input type="radio" id="viudo" name="estadocivil" value="viudo">
+        <label for="viudo">Viudo</label>
+    </div>
+    <div>
+        <input type="radio" id="union" name="estadocivil" value="union">
+        <label for="union">Union</label>
+    </div>
+
+
+
+
+    <p>Hobby</p>
+    <div>
+        <input type="checkbox" id="pintar" name="hobby" value="pintar">
+        <label for="pintar">Pintar</label>
+    </div>
+
+    <div>
+        <input type="checkbox" id="trotar" name="hobby" value="trotar">
+        <label for="trotar">Trotar</label>
+    </div>
+    <div>
+        <input type="checkbox" id="programar" name="hobby" value="programar">
+        <label for="programar">Programar</label>
+    </div>
+    <div>
+        <input type="checkbox" id="bailar" name="hobby" value="bailar">
+        <label for="bailar">Bailar</label>
+    </div>
+
+    <input type="file" name="foto" accept="image/png, image/gif, image/jpeg" />
+
+
+
+
+    <input type="submit" value="ENVIAR" />
+
+</form> 
